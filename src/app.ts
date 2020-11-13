@@ -1,5 +1,6 @@
 import express from "express";
 import newsRoutes from "../src/routes/news";
+import morgan from "morgan";
 
 const app = express();
 const PORT_KEY = "port"
@@ -7,6 +8,7 @@ const PORT_KEY = "port"
 app.set(PORT_KEY, 3000);
 app.set("json spaces", 2);
 
+app.use(morgan("dev"))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
