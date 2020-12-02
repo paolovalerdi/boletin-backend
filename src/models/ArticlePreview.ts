@@ -4,7 +4,7 @@ export class ArticlePreview {
     summary: string;
     date: string;
     category: string | null;
-    imageUrl: string;
+    image: string;
 
     constructor(
         id: number,
@@ -12,13 +12,13 @@ export class ArticlePreview {
         summary: string,
         date: string,
         category: string | null,
-        imageUrl: string
+        image: string
     ) {
         this.id = id;
         this.title = title;
         this.summary = summary;
         this.date = date;
         this.category = category;
-        this.imageUrl = imageUrl;
+        this.image = image;
     }
 }
