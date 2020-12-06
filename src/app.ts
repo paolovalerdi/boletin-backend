@@ -3,9 +3,9 @@ import newsRoutes from "../src/routes/news";
 import morgan from "morgan";
 
 class Application {
-    
-    private expressApp = express();
-    private PORT_KEY = "port";
+
+    private readonly expressApp = express();
+    private readonly PORT_KEY = "port";
 
     constructor() {
         this.expressApp.set(this.PORT_KEY, 3000);
